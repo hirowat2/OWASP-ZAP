@@ -4,8 +4,10 @@ services:
   zap:
     image: owasp/zap2docker-stable:2.12.0
     container_name: zap
+    # environment:
+    #   - ZAP_WEBSWING_OPTS="-host 0.0.0.0 -port 9090"
     volumes:
-      - ${PWD}:/zap/wrk
+      - ${PWD}:/zap/wrk/:rw
     ports:
       - "8080:8080"
       - "8090:8090"
