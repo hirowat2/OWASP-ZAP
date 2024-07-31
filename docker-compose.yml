@@ -2,7 +2,9 @@ version: '3.1'
 
 services:
   zap:
-    image: owasp/zap2docker-stable:2.12.0
+    # image: owasp/zap2docker-stable:2.12.0
+    image: zaproxy/zap-stable
+    # image: owasp/zap2docker-live:latest
     container_name: zap
     # environment:
     #   - ZAP_WEBSWING_OPTS="-host 0.0.0.0 -port 9090"
