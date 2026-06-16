@@ -8,7 +8,8 @@
 ## Run OWASP-ZAP
 
 ``` zsh
-docker-compose up
+docker-compose down
+docker-compose up --build
 
 http://localhost:8080/zap/
 ```
